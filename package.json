@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-encrypt-decrypt",
+  "version": "1.0.0",
+  "description": "Nodejs app - encrypt and decrypt data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entom/nodejs-encrypt-decrypt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entom/nodejs-encrypt-decrypt/issues"
+  },
+  "homepage": "https://github.com/entom/nodejs-encrypt-decrypt#readme"
+}
