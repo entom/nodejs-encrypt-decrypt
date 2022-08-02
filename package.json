@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/entom/nodejs-encrypt-decrypt/issues"
   },
-  "homepage": "https://github.com/entom/nodejs-encrypt-decrypt#readme"
+  "homepage": "https://github.com/entom/nodejs-encrypt-decrypt#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
 }
