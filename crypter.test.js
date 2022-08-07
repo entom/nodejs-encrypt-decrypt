@@ -24,5 +24,5 @@ test('encrypted input should be equal to decrypted value', () => {
   const staticIv = crypter.generateRandomKey();
   const encrypted = crypter.encrypt(inputValue, staticIv);
   const decrypted = crypter.decrypt(encrypted, staticIv);
-  expect(inputValue).toBe(crypter.decrypt(encrypted, encrypted.iv));
+  expect(inputValue).toBe(decrypted);
 });
