@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-encrypt-decrypt",
+  "name": "@entom/nodejs-encrypt-decrypt",
   "version": "1.0.0",
   "description": "Nodejs app - encrypt and decrypt data",
   "main": "index.js",
@@ -14,11 +14,15 @@
     "type": "git",
     "url": "git+https://github.com/entom/nodejs-encrypt-decrypt.git"
   },
-  "author": "",
+  "author": {
+    "email": "tomasznicieja@gmail.com",
+    "name": "Tomasz Nicieja"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/entom/nodejs-encrypt-decrypt/issues"
   },
+  "keywords": ["node", "nodejs", "encrypt", "decrypt"],
   "homepage": "https://github.com/entom/nodejs-encrypt-decrypt#readme",
   "dependencies": {
     "dotenv": "^16.0.1"
