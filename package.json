@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "bin": {
     "init": "./bin/init.js"
@@ -22,9 +22,17 @@
   "bugs": {
     "url": "https://github.com/entom/nodejs-encrypt-decrypt/issues"
   },
-  "keywords": ["node", "nodejs", "encrypt", "decrypt"],
+  "keywords": [
+    "node",
+    "nodejs",
+    "encrypt",
+    "decrypt"
+  ],
   "homepage": "https://github.com/entom/nodejs-encrypt-decrypt#readme",
   "dependencies": {
     "dotenv": "^16.0.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }

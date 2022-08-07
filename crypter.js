@@ -6,7 +6,7 @@ const generateRandomKey = (asString = false) => {
   return !asString ? result : result.toString('hex');
 }
 
-const secretKey = process.env.SECRET_KEY || generateRandomKey();
+const secretKey = process.env.SECRET_KEY || generateRandomKey(true);
 
 const encrypt = (text, iv = null) => {
   if (iv === null) {
