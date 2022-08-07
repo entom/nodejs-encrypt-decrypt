@@ -1,5 +1,5 @@
 {
-  "name": "@entom/nodejs-encrypt-decrypt",
+  "name": "@entom/node-encrypt-decrypt",
   "version": "1.0.0",
   "description": "Nodejs app - encrypt and decrypt data",
   "main": "index.js",
