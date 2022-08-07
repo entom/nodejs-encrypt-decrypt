@@ -3,7 +3,7 @@
 const fs = require('fs');
 const crypter = require('../crypter');
 
-const FILE_PATH = `${__dirname}/../.env`;
+const FILE_PATH = `${__dirname}/../../../../.env`;
 
 const writeFileContent = (content) => {
   fs.writeFile(FILE_PATH, content, 'utf8', function (err) {
