@@ -18,7 +18,7 @@
     "email": "tomasznicieja@gmail.com",
     "name": "Tomasz Nicieja"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/entom/nodejs-encrypt-decrypt/issues"
   },
