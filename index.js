@@ -1,6 +1,5 @@
 require('dotenv').config();
 const crypter = require('./crypter');
-// const crypto = require('crypto');
 
 const staticIv = crypter.generateRandomKey();
 console.log('staticIv', staticIv);

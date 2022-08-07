@@ -1,12 +1,5 @@
 const crypter = require('./crypter');
 
-class Result {
-  constructor(iv, content) {
-    this.iv = iv;
-    this.content = content;
-  }
-}
-
 test('encrypt string value should return object', () => {
   expect(crypter.encrypt('entom')).toBeInstanceOf(Object);
 });
