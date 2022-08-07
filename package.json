@@ -7,6 +7,9 @@
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "init": "./bin/init.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/entom/nodejs-encrypt-decrypt.git"

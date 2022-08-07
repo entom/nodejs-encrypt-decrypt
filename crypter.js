@@ -1,7 +1,11 @@
 const crypto = require('crypto');
 const algorithm = 'aes-256-ctr';
-// const secretKey = 'vOVH6sdmpNWjRRIqCc7rdxs01lwHzfr3';
-const secretKey = process.env.SECRET_KEY || crypto.randomBytes(16).toString('hex');
+
+const generateRandomKey = () => {
+  return crypto.randomBytes(16).toString('hex')
+}
+
+const secretKey = process.env.SECRET_KEY || generateRandomKey();
 
 const encrypt = (text, iv = null) => {
   if (iv === null) {
@@ -24,6 +28,7 @@ const decrypt = (hash, iv = null) => {
 };
 
 module.exports = {
+  generateRandomKey,
   encrypt,
   decrypt
 };
