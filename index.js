@@ -1,18 +1,13 @@
 require('dotenv').config();
 const crypter = require('./crypter');
-const crypto = require('crypto');
+// const crypto = require('crypto');
 
-const staticIv = crypto.randomBytes(16);
-console.log('staticIv', staticIv.toString('hex'));
+const staticIv = crypter.generateRandomKey();
+console.log('staticIv', staticIv);
 
-const value = crypter.encrypt('entom');
+const value = crypter.encrypt('entom', staticIv);
 console.log('value', value);
-const value1 = crypter.encrypt('entom');
+const value1 = crypter.encrypt('entom', staticIv);
 console.log('value-1', value1);
 
-const value2 = crypter.encrypt('entom', staticIv);
-console.log('value-2', value2);
-const value3 = crypter.encrypt('entom', staticIv);
-console.log('value-3', value3);
-
-console.log('decrypted', crypter.decrypt(value));
+console.log('value-1 decrypted', crypter.decrypt(value1, staticIv));

@@ -1,8 +1,9 @@
 const crypto = require('crypto');
 const algorithm = 'aes-256-ctr';
 
-const generateRandomKey = () => {
-  return crypto.randomBytes(16).toString('hex')
+const generateRandomKey = (asString = false) => {
+  const result = crypto.randomBytes(16);
+  return !asString ? result : result.toString('hex');
 }
 
 const secretKey = process.env.SECRET_KEY || generateRandomKey();

@@ -14,12 +14,12 @@ const writeFileContent = (content) => {
 fs.readFile(FILE_PATH, {encoding: 'utf8'}, function (err, data) {
   if (err !== null) {
     if (err.code === 'ENOENT') {
-      const data = 'SECRET_KEY=' + crypter.generateRandomKey();
+      const data = 'SECRET_KEY=' + crypter.generateRandomKey(true);
       writeFileContent(data);
     }
   } else {
     if (data.indexOf('SECRET_KEY=') === -1) {
-      data += '\nSECRET_KEY=' + crypter.generateRandomKey();
+      data += '\nSECRET_KEY=' + crypter.generateRandomKey(true);
       writeFileContent(data);
     }
   }
